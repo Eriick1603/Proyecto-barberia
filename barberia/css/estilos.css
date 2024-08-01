@@ -1,0 +1,593 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+header {
+	width:100%;
+	overflow:hidden; 
+	background:#252932;
+	margin-bottom:20px;
+}
+
+.wrapper {
+	width:90%; 
+	max-width:1000px; 
+	margin:auto; 
+	overflow:hidden; 
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header nav a:hover {
+	background:green;
+	border-radius:50pxs;
+}
+header .logo {
+    
+	color:#f2f2f2;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size:50px;
+	line-height:200px;
+	float:left;
+}
+
+header nav {
+	float:right;
+	line-height:200px;
+}
+
+@media screen and (max-width: 950px) {
+	header .logo,
+	header nav {
+		width:100%;
+		text-align:center; /*Centramos el menu y el logotipo*/
+		line-height:100px;
+	}
+
+	.header2 {
+		height:auto;
+	}
+
+	.header2 .logo,
+	.header2 nav {
+		line-height:50px;
+	}
+}
+header header .logo-foto{
+    display: block;
+    margin: auto;
+}
+header{
+    background-image: url('/barberia/img/logo.png');
+    background-image: url('../img/portada.png');
+    height:600px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: cover;
+}
+header .menu{
+    margin:30px 0;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border:3px solid green;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: auto;
+   
+    font-size:25px;
+    text-align: right;
+    
+}
+header .contenedor .logo{
+    display: inline-flex;
+}
+header .menu a:hover{
+    text-decoration: underline;
+}
+header .menu a{
+    font-size:18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    padding:10px 0;
+    margin:0 15px;
+    color:#fff;
+    text-decoration: none;
+    
+}
+header .contenido-header{
+    margin:120px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+main .contenedor .ima-historia{
+    float: right;
+}
+main .contenedor .ima-mision{
+    float: right;
+}
+main .contenedor .ima-vision{
+    float: right;
+}
+main .contenedor .ima-valores{
+    float: right;
+}
+header .contenido-header .titulo-header{
+    font-size: 120px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+}
+
+header .contenido-header .linea-header{
+    width: 700px;
+    margin: auto;
+    height:4px;
+    background: green;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+header .contenido-header .texto-header{
+    color:#fff;
+    font-weight: 300;
+    margin-bottom:30px;
+    font-size:25px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header .contenido-header .action-header{
+    display: inline-block;
+    margin: auto;
+    color: #fff;   
+    text-decoration: none;
+    border:1px solid green;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header .contenido-header .action-header:hover{
+    background: greenyellow;
+    color: #fff;
+}
+
+main .quienes{
+    background: #fff;
+    padding:60px 0;
+}
+main .quienes .contenedor .ima-historia{
+    margin:10px 0;
+    margin: auto;
+    display: block;
+    border-radius: 25px; 
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+main .quienes .quienes-titulo{
+    color:#000;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom:20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main .quienes .quienes-parrafo{
+    text-align: center;
+    color:#999999;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main .mision{
+    background: #f0f3f5;
+    padding:60px 0;
+}
+
+main .mision .quienes-titulo{
+    color:#000;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom:20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main .mision .quienes-parrafo{
+    text-align: center;
+    color:#999999;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+main .vision{
+    background: #fff;
+    padding:60px 0;
+}
+
+main .vision .quienes-titulo{
+    color:#000;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom:20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main .vision .quienes-parrafo{
+    text-align: center;
+    color:#999999;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .valores{
+    background: #f0f3f5;
+    padding:60px 0;
+}
+
+main .valores .quienes-titulo{
+    color:#000;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom:20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main .valores .quienes-parrafo{
+    text-align: center;
+    color:#999999;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main .quehacemos{
+    margin:60px 0;  
+}
+main .contenido-cajas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .quehacemos .contenido-cajas .tarjeta{
+    width: 30%;
+    text-align: center;
+}
+
+main .quehacemos .contenido-cajas .tarjeta .contenido-tarjeta .titulo-tarjeta{
+    margin:10px 0;   
+}
+
+main .portafolio{
+    background: #f0f3f5;
+    padding: 60px 0;
+}
+
+main .portafolio .portafolio-textos{
+    text-align: center;
+    margin-bottom: 60px;
+    color:#2d3950;
+    font-size: 20px;
+}
+
+main .portafolio .portafolio-textos p{
+    color: #999999;
+    font-size: 15px;
+    margin:20px 0 0 0;
+}
+
+main .portafolio .galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .portafolio .galeria .fotos{
+    width: 30%;
+    margin-bottom:20px;
+}
+
+main .portafolio .galeria .fotos img{
+    width: 100%;
+    height:210px;
+    border-radius: 5px;
+}
+main .portafolio .galeria .fotos img:hover{
+    opacity:.6;
+    cursor: pointer;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h1{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pie-pagina .grupo-1 .box h1 a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-1 .box h2 a{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.pie-pagina .grupo-1 .box .Email{
+    color: #fff;  
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+.pie-pagina .grupo-1 .box .emi2{
+    margin: 10px;
+    color: #fff;  
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pie-pagina .grupo-1 .box .boton-w {
+    margin: 7px;
+    background-color: #2cb742;
+    border-radius: 12px;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    
+}
+.pie-pagina .grupo-1 .box h3 a{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width:760px){
+    header .menu{
+        justify-content: center;
+    }
+    header .contenido-header .texto-header{
+       font-size:18px;
+       font-family: Arial, Helvetica, sans-serif;
+       color: #fff;
+    }
+    header .contenido-header .texto-header .desaparecer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:630px){
+    header .contenido-header .titulo-header{
+        font-size:80px;
+    }
+    header .contenido-header .linea-header{
+        width: 400px;
+    }
+    main .portafolio .galeria .fotos{
+        width:49%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .contenido-header .titulo-header{
+        font-size:40px;
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+       width: 48%;
+    }
+    main .contenido-cajas{
+        justify-content: center
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+        margin:20px 0;
+    }
+}
+
+@media screen and (max-width: 350px){
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 98%;
+    }
+    header .contenido-header .texto-header{
+        font-size:15px;
+    }
+}
+#tabla-precios {
+    display:inline-block;
+    width:100%;
+    margin-top:50px
+   }
+   
+   /*Columnas*/
+   
+   .precio-col {
+    display:inline-block;
+    background-color:#f3f3f3;
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+    margin-bottom:50px;
+    box-shadow: 0px 2px 5px #ddd
+   }
+   
+   @media screen and (min-width:768px) {
+    .precio-col {
+    width:32%;
+    float:left;
+    margin-right:2%
+    }
+    
+    .precio-col:last-child {
+    margin-right:0
+    }
+   }
+   
+   .precio-col-header {
+    background-color:#333;
+    padding:20px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px
+   }
+   
+   .precio-col:nth-child(2) .precio-col-header {
+    background-color:green
+   }
+   
+   .precio-col-header h3 {
+    color:#f3f3f3;
+    text-align:center;
+    font-size:30px;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:0
+   }
+   
+   .precio-col-header p {
+    text-align:center;
+    color:#f3f3f3;
+    font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:0
+   }
+   
+   /*Características*/
+   
+   .precio-col-features {
+    padding: 0 20px 20px 20px
+   }
+   
+   .precio-col-features p {
+    padding:20px 0;
+    margin:0;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top:1px solid #ddd
+   }
+   
+   .precio-col-features p:first-child,
+   .precio-col-features p:last-child {
+    border-top:none
+   }
+   
+
+   
+   .precio-col-comprar {
+    padding:10px;
+    max-width:250px;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:green;
+    margin: 0 auto 20px;
+    border-radius:10px;
+    border: 2px solid green;
+    transition: all 0.3s
+   }
+   
+   .precio-col-comprar a {
+    color:#f3f3f3;
+    padding:10px;
+    font-size:20px;
+    text-transform:uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s
+    
+   }
+   
+   .precio-col-comprar:hover {
+    background-color:#f3f3f3;
+    transition: all 0.3s
+   }
+   
+   .precio-col-comprar:hover a {
+    color: green;
+    transition: all 0.3s
+   }
+   
